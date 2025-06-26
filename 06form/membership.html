@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Join our workout gym for fitness classes and personal training." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="future.css">
+    <meta charset="UTF-8">
+    <title>Future Gym</title>
+</head>
+
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Future Gym</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li class="active"><a href="membership.html">Join Now</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>Sign Up for Membership</h1>
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Member Information</legend>
+                <label>Full Name*<input type="text" name="fname" required></label>
+                <label>Email*<input type="text" name="email" required placeholder="definitlymyemail@email.com"></label>
+                <label>Phone Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                <label>Workout Goal
+                    <select name="goal">
+                        <option value="none">Please Select</option>
+                        <option value="loss">Weight Loss</option>
+                        <option value="gain">Weight & Muscle Gain</option>
+                        <option value="calistenic">Calisthenics & Rock Climbing</option>
+                        <option value="strength">Strength for Strongman Competition</option>
+                        <option value="cardio">Cardio for Marathons</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Gym Types</legend>
+                <label><input type="checkbox" name="cardio" value="chosen">Traditional Gym</label>
+                <label><input type="checkbox" name="strength" value="chosen">Rock Climbing Gym</label>
+                <label><input type="checkbox" name="yoga" value="chosen">Swimming Gym</label>
+            </fieldset>
+            <fieldset>
+                <legend>Weight Information</legend>
+                <label>Current Weight (lbs)*<input type="number" name="current_weight" required placeholder="Enter weight"></label>
+                <label>Desired Weight (lbs)*<input type="number" name="desired_weight" required placeholder="Enter weight"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Plan</legend>
+                <label><input type="radio" name="plan" value="monthly" required>Monthly Plan</label>
+                <label><input type="radio" name="plan" value="yearly">Yearly Plan</label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments">Please add any special requests or fitness goals</textarea>
+            </label>
+
+            <input type="submit" value="Submit Membership Request">
+        </form>
+        <!-- start the page footer -->
+        <footer>
+            <p>©2025 • Ryan Schultz • <a href="mailto:ryan.s.schultz0@gmail.com">Email Us</a></p>
+        </footer>
+</body>
+
+</html>
