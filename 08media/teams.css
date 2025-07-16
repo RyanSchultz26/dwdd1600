@@ -1,0 +1,173 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    color: #1C2526; /* Dark gray-black for body text */
+}
+
+/* header stuff here */
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #2E1A47; /* Deep purple for header */
+}
+
+header span {
+    margin: 0;
+    color: #8A4AF3; /* Bright purple for header text */
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* PHONE NAV HERE */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 1.2rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #8A4AF3; /* Purple for nav links */
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #4B3B6B; /* Darker purple for border */
+    }
+    nav .active a {
+        background-color: #8A4AF3; /* Bright purple for active */
+        color: #E6E8FA; /* Light gray for contrast */
+    }
+} /*end small screens*/
+
+/* LARGE NAV HERE */
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #1C2526; /* Black for nav background */
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+    nav a {
+        display: block;
+        padding: .8rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #E6E8FA; /* Light gray for nav links */
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-left: solid 1px #4B3B6B; /* Darker purple for border */
+    }
+    nav .active a {
+        color: #8A4AF3; /* Purple for active link */
+    }
+    nav a:hover {
+        color: #3B82F6; /* Blue for hover */
+    }
+} /*end large screens*/
+
+/* main stuff here */
+main {
+    padding: 0 2vw;
+}
+
+main h1 {
+    color: #8A4AF3; /* Purple for h1 */
+    font-size: 2rem;
+    margin: .5rem 0 .8rem 0;
+    font-weight: 600;
+}
+main h2 {
+    color: #3B82F6; /* Blue for h2 */
+    margin-bottom: .2rem;
+    font-weight: 600;
+}
+main p {
+    color: #1C2526; /* Black for paragraph text */
+    margin: 0 0 .8rem 0;
+    line-height: 140%;
+    font-size: 1.2rem;
+}
+main a {
+    color: #8A4AF3; /* Purple for links */
+    font-weight: 600;
+    text-decoration: none;
+}
+main a:hover {
+    color: #3B82F6; /* Blue for link hover */
+    text-decoration: underline;
+}
+ul li {
+    color: #3B82F6; /* Blue for list items */
+    font-weight: 600;
+    line-height: 135%;
+}
+
+/* image stuff here */
+.teamHero, .image-right img {
+    width: 100%;
+    height: auto;
+}
+
+.image-right {
+    float: right;
+    margin: 0 0 0 2vw;
+    width: 50%;
+    color: #1C2526; /* Black for figcaption */
+}
+.image-right figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+/* table stuff here */
+table.activities, table.therapies {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.activities th, table.therapies th {
+    background-color: #3B82F6; /* Blue for table header */
+    color: #E6E8FA; /* Light gray for header text */
+    padding: .6rem 2%;
+    text-align: left;
+}
+table.activities td, table.therapies td {
+    color: #1C2526; /* Black for table text */
+    padding: .4rem 2%;
+}
+table.activities tr:nth-child(odd), table.therapies tr:nth-child(odd) {
+    background-color: #E6E8FA; /* Light purple-gray for alternate rows */
+}
+table.activities tr:hover, table.therapies tr:hover {
+    background-color: #D1D5FB; /* Lighter purple for hover */
+}
+
+/* footer stuff here */
+footer {
+    border-top: solid #8A4AF3 1px; /* Purple for border */
+    text-align: center;
+    color: #3B82F6; /* Blue for footer text */
+    font-size: .8rem;
+    padding: 1rem 0;
+    clear: both;
+}
+footer a {
+    color: #3B82F6; /* Blue for footer links */
+}
+
+/* footer stuff here */
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
